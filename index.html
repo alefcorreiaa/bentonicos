@@ -4,70 +4,135 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bentônicos | Bioindicadores da Água</title>
+  <meta name="description" content="Projeto de extensão da UNIFEI Campus Itabira sobre macroinvertebrados bentônicos como bioindicadores da qualidade da água.">
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
   <header>
-    <h1>Bentônicos</h1>
+    <img class="logo" src="img/logo.png" alt="Logo do projeto Bentônicos">
     <nav>
       <a href="#sobre">Sobre</a>
       <a href="#bioindicadores">Bioindicadores</a>
-      <a href="#beneficios">Benefícios</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#para-quem">Para quem</a>
       <a href="#contato">Contato</a>
     </nav>
     <div id="google_translate_element"></div>
   </header>
 
   <div class="hero">
-    <h2>Conhecendo a água através de quem vive nela</h2>
-    <p>
-      O projeto de extensão Bentônicos ensina sobre a qualidade da água
-      por meio de organismos bentônicos, os pequenos seres que vivem no fundo
-      dos corpos d'água e revelam como está o ambiente.
-    </p>
-    <a class="botao" href="#contato">Agende uma visita</a>
+    <div class="hero-conteudo">
+      <span class="selo">Projeto de extensão · UNIFEI Campus Itabira</span>
+      <h2>E se a água pudesse contar como ela está?</h2>
+      <p>
+        Os macroinvertebrados bentônicos vivem no fundo dos rios e lagos e revelam
+        a saúde dos ambientes aquáticos. Conheça o Bentônicos e aprenda com eles.
+      </p>
+      <div class="botoes">
+        <a class="botao" href="#contato">Agende uma visita</a>
+        <a class="botao botao-secundario" href="#sobre">Conhecer o projeto</a>
+      </div>
+    </div>
   </div>
 
   <section id="sobre">
-    <h2>Sobre o projeto</h2>
-    <p>
-      O Bentônicos é um projeto de extensão da UNIFEI Campus Itabira.
-      Com o laboratório móvel "Ciência sobre Rodas", levamos conhecimento
-      sobre meio ambiente às escolas e à comunidade.
-    </p>
+    <div class="container duas-colunas">
+      <img src="img/coleta.jpg" alt="Equipe do projeto realizando coleta de amostras">
+      <div>
+        <span class="selo" style="color: var(--turquesa); border-color: var(--turquesa);">Sobre o projeto</span>
+        <h2>Ciência que sai da universidade</h2>
+        <p>
+          O Bentônicos é um projeto de extensão da UNIFEI Campus Itabira que leva
+          conhecimento sobre meio ambiente a escolas e à comunidade. Com o laboratório
+          móvel "Ciência sobre Rodas", transformamos pesquisa em experiência prática.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <section id="bioindicadores">
-    <h2>O que são bioindicadores?</h2>
-    <p>
-      São seres vivos que, pela sua presença ou ausência, indicam as condições
-      do ambiente. Os macroinvertebrados bentônicos são excelentes indicadores
-      da qualidade da água, porque vivem por longos períodos no mesmo lugar.
-    </p>
+  <section id="bioindicadores" class="alternado">
+    <div class="container">
+      <div class="titulo-secao">
+        <span>Bioindicadores</span>
+        <h2>Pequenos seres, grandes pistas</h2>
+      </div>
+      <div class="grade">
+        <div class="card">
+          <svg class="icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 30c6-6 12 6 18 0s12 6 18 0"/><circle cx="24" cy="16" r="6"/></svg>
+          <h3>Efêmeras</h3>
+          <p>Ninfas sensíveis às alterações da água, ótimas para identificar ambientes saudáveis.</p>
+        </div>
+        <div class="card">
+          <svg class="icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M24 8v32M24 20l-10-6M24 20l10-6M24 30l-10 6M24 30l10 6"/></svg>
+          <h3>Plecópteros</h3>
+          <p>Associados a águas bem oxigenadas e de boa qualidade.</p>
+        </div>
+        <div class="card">
+          <svg class="icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="12" y="14" width="24" height="20" rx="8"/><path d="M18 14v-4M30 14v-4"/></svg>
+          <h3>Tricópteros</h3>
+          <p>Larvas que constroem abrigos com grãos e detritos do próprio ambiente.</p>
+        </div>
+        <div class="card">
+          <svg class="icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 24h32M14 18l-6-6M34 18l6-6M14 30l-6 6M34 30l6 6"/><circle cx="24" cy="24" r="5"/></svg>
+          <h3>Quironomídeos</h3>
+          <p>Larvas com espécies de diferentes tolerâncias, úteis para comparar ambientes.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="beneficios">
-    <h2>Como o projeto beneficia a sociedade</h2>
-    <p>
-      Ao ensinar sobre a água de forma prática, o projeto contribui para a
-      conscientização ambiental, a formação de estudantes e a participação
-      da comunidade na preservação dos recursos hídricos.
-    </p>
+  <section id="como-funciona">
+    <div class="container">
+      <div class="titulo-secao">
+        <span>Como funciona</span>
+        <h2>Quatro ações formativas</h2>
+      </div>
+      <div class="etapas">
+        <div class="etapa">
+          <h3>Conhecer</h3>
+          <p>Palestras no laboratório móvel sobre água, ecossistemas e biodiversidade.</p>
+        </div>
+        <div class="etapa">
+          <h3>Experienciar</h3>
+          <p>Coleta de amostras em pontos do corpo hídrico, com a mão na massa.</p>
+        </div>
+        <div class="etapa">
+          <h3>Analisar</h3>
+          <p>Triagem dos organismos com lupas e microscópios e cálculo do índice de qualidade.</p>
+        </div>
+        <div class="etapa">
+          <h3>Agir</h3>
+          <p>Mesas-redondas, maquetes, vídeos e campanhas para transformar o aprendizado.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contato">
-    <h2>Entre em contato</h2>
-    <p>
-      Quer saber como funcionam as visitas à sua escola ou tirar dúvidas?
-      Escreva para nós.
-    </p>
+  <section id="para-quem" class="alternado">
+    <div class="container">
+      <div class="titulo-secao">
+        <span>Para quem é</span>
+        <h2>Atividades para cada etapa de ensino</h2>
+      </div>
+      <div class="grade">
+        <div class="card"><h3>Ensino Fundamental I</h3><p>Ecossistemas aquáticos, biodiversidade e os pequenos organismos da água.</p></div>
+        <div class="card"><h3>Ensino Fundamental II</h3><p>Relações ecológicas, poluição hídrica e bioindicadores.</p></div>
+        <div class="card"><h3>Ensino Médio</h3><p>Biomonitoramento, ecologia aquática e a aplicação da ciência.</p></div>
+        <div class="card"><h3>Ensino Técnico</h3><p>Monitoramento ambiental prático e uso de indicadores biológicos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faixa" id="contato">
+    <h2>Quer receber o projeto na sua escola?</h2>
+    <p>Escreva para nós para saber como funcionam as visitas e tirar dúvidas.</p>
     <a class="botao" href="mailto:macrobentonicos@gmail.com">macrobentonicos@gmail.com</a>
   </section>
 
   <footer>
-    <p>Projeto Bentônicos | UNIFEI Campus Itabira</p>
-    <p><a href="mailto:macrobentonicos@gmail.com">macrobentonicos@gmail.com</a></p>
+    <p>Projeto Bentônicos · UNIFEI Campus Itabira</p>
+    <p><a href="mailto:macrobentonicos@gmail.com">macrobentonicos@gmail.com</a> · <a href="https://instagram.com/bentonicos_unifei">@bentonicos_unifei</a></p>
   </footer>
 
   <script>
