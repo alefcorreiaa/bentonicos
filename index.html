@@ -16,22 +16,36 @@
 
   <a class="pular" href="#main">Ir para o conteúdo</a>
 
-  <div class="topo-institucional">Universidade Federal de Itajubá · Campus Itabira</div>
-
-  <header class="cabecalho">
-    <a href="#topo" aria-label="Início"><img class="logo" src="img/logo.png.jpeg" alt="Logo do projeto Bentônicos"></a>
-    <nav class="menu" aria-label="Navegação principal">
-      <a href="#apresentacao">Apresentação</a>
-      <a href="#metodologia">Metodologia</a>
-      <a href="#publico">Público</a>
-      <a href="#coordenacao">Coordenação</a>
-      <a href="#ciencia-rodas">Ciência sobre Rodas</a>
-      <a href="#contato">Contato</a>
-      <a class="instagram" href="https://www.instagram.com/bentonicos_unifei" target="_blank" rel="noopener" aria-label="Instagram do Bentônicos">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-brand" href="#topo" aria-label="Início do site do Bentônicos">
+        <img src="img/logo.png.jpeg" alt="Logo do projeto Bentônicos">
+        <span class="site-brand__divisor" aria-hidden="true"></span>
+        <span class="site-brand__texto">
+          <strong>Bentônicos</strong>
+          <span>UNIFEI · Campus Itabira</span>
+        </span>
       </a>
-    </nav>
-    <a class="botao cta" href="#contato">Agende uma visita</a>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Navegação principal">
+        <a href="#apresentacao">Apresentação</a>
+        <a href="#metodologia">Metodologia</a>
+        <a href="#publico">Público</a>
+        <a href="#coordenacao">Coordenação</a>
+        <a href="#ciencia-rodas">Ciência sobre Rodas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="site-header__acoes">
+        <a class="icone-social" href="https://www.instagram.com/bentonicos_unifei" target="_blank" rel="noopener" aria-label="Instagram do Bentônicos">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+        </a>
+        <a class="btn-header" href="#contato">Agende uma visita</a>
+        <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+          <span></span>
+        </button>
+      </div>
+    </div>
   </header>
 
   <main id="main">
@@ -377,6 +391,7 @@
   </footer>
 
   <script>
+    // Lightbox da galeria
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
 
@@ -396,6 +411,52 @@
     lightbox.addEventListener('click', function (event) {
       if (event.target === lightbox) lightbox.close();
     });
+
+    // Menu responsivo e seção ativa
+    const botaoMenu = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('menu-principal');
+    const linksMenu = menu.querySelectorAll('a[href^="#"]');
+
+    function fecharMenu() {
+      botaoMenu.setAttribute('aria-expanded', 'false');
+      botaoMenu.setAttribute('aria-label', 'Abrir menu');
+      menu.classList.remove('is-open');
+    }
+
+    botaoMenu.addEventListener('click', function () {
+      const aberto = botaoMenu.getAttribute('aria-expanded') === 'true';
+      if (aberto) {
+        fecharMenu();
+      } else {
+        botaoMenu.setAttribute('aria-expanded', 'true');
+        botaoMenu.setAttribute('aria-label', 'Fechar menu');
+        menu.classList.add('is-open');
+      }
+    });
+
+    linksMenu.forEach(function (link) {
+      link.addEventListener('click', fecharMenu);
+    });
+
+    if ('IntersectionObserver' in window) {
+      const secoes = [];
+      linksMenu.forEach(function (link) {
+        const alvo = document.querySelector(link.getAttribute('href'));
+        if (alvo) secoes.push({ link: link, alvo: alvo });
+      });
+
+      const observador = new IntersectionObserver(function (entradas) {
+        entradas.forEach(function (entrada) {
+          if (entrada.isIntersecting) {
+            secoes.forEach(function (item) {
+              item.link.classList.toggle('is-active', item.alvo === entrada.target);
+            });
+          }
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+
+      secoes.forEach(function (item) { observador.observe(item.alvo); });
+    }
   </script>
 
 </body>
