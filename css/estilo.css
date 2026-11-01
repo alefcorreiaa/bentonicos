@@ -24,7 +24,7 @@ body {
   font-size: 1.02rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Lora', Georgia, serif;
   color: var(--azul-escuro);
   line-height: 1.3;
@@ -33,7 +33,7 @@ h1, h2, h3 {
 img { max-width: 100%; display: block; }
 a { color: var(--azul); }
 
-/* CABEÇALHO: logo à esquerda, menu à direita */
+/* CABEÇALHO */
 header {
   position: sticky;
   top: 0;
@@ -50,7 +50,6 @@ header {
 }
 
 .logo { height: 76px; width: auto; border-radius: 10px; }
-
 .menu { display: flex; align-items: center; gap: 1.6rem; flex-wrap: wrap; }
 
 .menu a {
@@ -78,7 +77,7 @@ header {
 
 .instagram:hover { color: var(--azul-escuro); background: var(--pessego); border-color: var(--pessego); }
 
-/* HERO: fundo claro, título azul */
+/* HERO */
 .hero {
   display: flex;
   align-items: center;
@@ -110,12 +109,7 @@ header {
   font-weight: 600;
 }
 
-.hero p {
-  font-size: 1.1rem;
-  color: var(--cinza);
-  max-width: 640px;
-  margin: 0 auto;
-}
+.hero p { font-size: 1.1rem; color: var(--cinza); max-width: 640px; margin: 0 auto; }
 
 .botoes { margin-top: 2.2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
@@ -133,12 +127,7 @@ header {
 
 .botao:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(242, 162, 126, 0.4); }
 
-.botao-secundario {
-  background: transparent;
-  color: var(--azul);
-  border: 1px solid var(--azul);
-}
-
+.botao-secundario { background: transparent; color: var(--azul); border: 1px solid var(--azul); }
 .botao-secundario:hover { box-shadow: none; background: var(--azul); color: var(--branco); }
 
 /* SEÇÕES */
@@ -149,7 +138,7 @@ section { padding: 5rem 1.5rem; }
 .cabecalho-secao { margin-bottom: 2.8rem; max-width: 720px; }
 .cabecalho-secao.centro { margin-left: auto; margin-right: auto; text-align: center; }
 
-.cabecalho-secao .rotulo {
+.rotulo {
   color: var(--azul);
   font-weight: 600;
   font-size: 0.78rem;
@@ -162,7 +151,12 @@ section { padding: 5rem 1.5rem; }
 .cabecalho-secao h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); }
 .cabecalho-secao p { color: var(--cinza); margin-top: 0.8rem; }
 
-/* SOBRE */
+.subtitulo {
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  margin: 4rem 0 1.8rem;
+}
+
+/* SOBRE: narrativa e ficha */
 .sobre-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -170,7 +164,7 @@ section { padding: 5rem 1.5rem; }
   align-items: start;
 }
 
-.sobre-grid p + p { margin-top: 1rem; }
+.narrativa p { margin-bottom: 1rem; }
 
 .ficha {
   background: var(--branco);
@@ -180,17 +174,158 @@ section { padding: 5rem 1.5rem; }
   box-shadow: var(--sombra);
 }
 
-.ficha h3 {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+.ficha > h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
   padding-bottom: 0.7rem;
   border-bottom: 2px solid var(--pessego);
 }
 
-.ficha dl { display: grid; grid-template-columns: auto 1fr; gap: 0.7rem 1rem; font-size: 0.93rem; }
-.ficha dt { color: var(--cinza); font-weight: 500; }
-.ficha dd { color: var(--texto); }
+.ficha-bloco { padding: 1.1rem 0; border-bottom: 1px solid var(--linha); }
+.ficha-bloco:last-child { border-bottom: none; padding-bottom: 0; }
 
-.tres-blocos {
+.ficha-bloco h4 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--azul);
+  margin-bottom: 0.7rem;
+}
+
+.ficha-bloco dl { display: grid; grid-template-columns: auto 1fr; gap: 0.5rem 1rem; font-size: 0.92rem; }
+.ficha-bloco dt { color: var(--cinza); }
+.ficha-bloco dd { color: var(--texto); }
+.ficha-bloco p { font-size: 0.92rem; color: var(--cinza); }
+
+.tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.tags span {
+  background: var(--nevoa);
+  color: var(--azul);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* OBJETIVO EM DESTAQUE */
+.destaque-objetivo {
+  margin-top: 3.5rem;
+  background: var(--azul);
+  color: var(--branco);
+  border-radius: 14px;
+  padding: 2.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.destaque-objetivo .rotulo { color: var(--pessego-claro); }
+.destaque-objetivo h3 { color: var(--branco); font-size: 1.6rem; margin-bottom: 0.8rem; }
+.destaque-objetivo p { color: rgba(255, 255, 255, 0.92); }
+
+.destaque-objetivo ul { list-style: none; }
+.destaque-objetivo li {
+  padding: 0.6rem 0 0.6rem 1.4rem;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.95rem;
+}
+.destaque-objetivo li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.1rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pessego);
+}
+
+/* CARDS GERAIS */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--branco);
+  border-radius: 12px;
+  padding: 2rem 1.6rem;
+  box-shadow: var(--sombra);
+  border: 1px solid var(--linha);
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.card:hover { transform: translateY(-4px); border-color: var(--pessego); }
+.card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+.card p { font-size: 0.93rem; color: var(--cinza); }
+
+.card .numero {
+  font-family: 'Lora', serif;
+  color: var(--pessego);
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.icone { width: 42px; height: 42px; color: var(--azul); margin-bottom: 1rem; }
+
+/* EIXOS */
+.eixos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.eixo {
+  background: var(--branco);
+  border-radius: 12px;
+  padding: 2rem;
+  border-top: 3px solid var(--azul);
+  box-shadow: var(--sombra);
+}
+
+.eixo h3 { font-size: 1.15rem; margin-bottom: 0.6rem; }
+.eixo p { font-size: 0.94rem; color: var(--cinza); }
+
+/* METODOLOGIA */
+.abordagem {
+  background: var(--branco);
+  border-left: 3px solid var(--pessego);
+  padding: 1.4rem 1.8rem;
+  border-radius: 10px;
+  box-shadow: var(--sombra);
+  margin-bottom: 2.5rem;
+}
+
+.abordagem p { color: var(--cinza); font-size: 0.95rem; }
+
+.etapas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  counter-reset: etapa;
+}
+
+.etapa::before {
+  counter-increment: etapa;
+  content: counter(etapa, decimal-leading-zero);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--azul);
+  color: var(--branco);
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.etapa h3 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+.etapa p {
