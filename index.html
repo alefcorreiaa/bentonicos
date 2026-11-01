@@ -5,46 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bentônicos | Bioindicadores da Água · UNIFEI Campus Itabira</title>
   <meta name="description" content="Projeto de extensão da UNIFEI Campus Itabira sobre macroinvertebrados bentônicos como bioindicadores da qualidade da água.">
+  <meta property="og:title" content="Bentônicos | Bioindicadores da Água">
+  <meta property="og:description" content="E se a água pudesse contar como ela está? Projeto de extensão da UNIFEI Campus Itabira.">
+  <meta property="og:image" content="https://alefcorreiaa.github.io/bentonicos/img/logo.png.jpeg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="img/logo.png.jpeg">
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body id="topo">
 
+  <a class="pular" href="#main">Ir para o conteúdo</a>
+
   <header>
-    <a href="#topo"><img class="logo" src="img/logo.png.jpeg" alt="Logo do projeto Bentônicos"></a>
-    <nav class="menu">
+    <a href="#topo" aria-label="Início"><img class="logo" src="img/logo.png.jpeg" alt="Logo do projeto Bentônicos"></a>
+    <nav class="menu" aria-label="Navegação principal">
       <a href="#apresentacao">Apresentação</a>
       <a href="#metodologia">Metodologia</a>
       <a href="#publico">Público</a>
       <a href="#coordenacao">Coordenação</a>
+      <a href="#ciencia-rodas">Ciência sobre Rodas</a>
       <a href="#contato">Contato</a>
       <a class="instagram" href="https://www.instagram.com/bentonicos_unifei" target="_blank" rel="noopener" aria-label="Instagram do Bentônicos">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
       </a>
     </nav>
   </header>
 
-  <div class="hero">
-    <div class="hero-grid">
+  <main id="main">
+
+  <!-- 1. CAPA -->
+  <div class="capa">
+    <div class="capa-grid">
       <div>
-        <span class="selo">Projeto de extensão · UNIFEI Campus Itabira</span>
+        <img class="logo-capa" src="img/logo.png.jpeg" alt="Logotipo do Projeto Bentônicos">
+        <p class="identificacao">UNIFEI · Campus Itabira</p>
         <h1>E se a água pudesse contar como ela está?</h1>
+        <p class="subtitulo-capa">Pesquisa, ensino e extensão em torno da água.</p>
         <p>
           Os macroinvertebrados bentônicos vivem no fundo dos rios e lagos e revelam a saúde
-          dos ambientes aquáticos. O Bentônicos transforma esse conhecimento científico em
-          educação ambiental para escolas e comunidade.
+          dos ambientes aquáticos. O Bentônicos transforma esse conhecimento em educação ambiental
+          para escolas e comunidade.
         </p>
         <div class="botoes">
-          <a class="botao" href="#contato">Agende uma visita</a>
-          <a class="botao botao-secundario" href="#apresentacao">Conheça o projeto</a>
+          <a class="botao" href="#apresentacao">Conheça o projeto</a>
+          <a class="botao botao-secundario" href="#contato">Leve o Bentônicos à sua escola</a>
         </div>
       </div>
       <figure class="figura">
-        <div class="imagem" style="background-image: url('img/capa.jpg'); height: 420px;" role="img" aria-label="Capa do projeto Bentônicos"></div>
-        <figcaption>Imagem de capa. [Inserir crédito da fotografia]</figcaption>
+        <div class="imagem" style="background-image: url('img/capa.jpg'); height: 460px;" role="img" aria-label="Ambiente aquático estudado pelo projeto Bentônicos"></div>
       </figure>
     </div>
   </div>
 
+  <!-- 2. APRESENTAÇÃO E HISTÓRIA -->
   <section id="apresentacao">
     <div class="container">
       <div class="cabecalho-secao">
@@ -72,34 +85,43 @@
         </div>
         <figure class="figura">
           <div class="imagem" style="background-image: url('img/campus-itabira.jpg');" role="img" aria-label="Campus Itabira da UNIFEI"></div>
-          <figcaption>Campus Itabira, UNIFEI. [Inserir crédito da fotografia]</figcaption>
+          <figcaption>Campus Itabira, UNIFEI.</figcaption>
         </figure>
       </div>
-    </div>
-  </section>
 
-  <section id="historia" class="alternado">
-    <div class="container texto-largo">
-      <div class="cabecalho-secao">
-        <span class="rotulo">História e origem</span>
-        <h2>De uma disciplina de extensão a um laboratório sobre rodas</h2>
+      <div style="margin-top: 5rem;">
+        <div class="cabecalho-secao">
+          <span class="rotulo">História e origem</span>
+          <h2>A trajetória do Bentônicos</h2>
+        </div>
+        <ol class="linha-tempo">
+          <li>
+            <span class="ano">2023</span>
+            <h3>Origem no contexto da extensão</h3>
+            <p>O projeto surge em uma disciplina de extensão da UNIFEI, Campus Itabira, como forma de levar o estudo da água para além da sala de aula.</p>
+          </li>
+          <li>
+            <span class="ano">2026</span>
+            <h3>Reconhecimento institucional</h3>
+            <p>O projeto é aprovado no Edital 02/2026 da Pró-Reitoria de Extensão (Proex) da UNIFEI.</p>
+          </li>
+          <li>
+            <span class="ano">2026</span>
+            <h3>Semana da Água</h3>
+            <p>Participação na Semana da Água, em parceria com a Secretaria de Meio Ambiente de Itabira, com cerca de 300 alunos da rede pública.</p>
+          </li>
+          <li>
+            <span class="ano">2026</span>
+            <h3 class="previsto">Segundo semestre</h3>
+            <p>Visitas a escolas e campanhas de coleta previstas no cronograma do projeto.</p>
+          </li>
+        </ol>
       </div>
-      <p>
-        O projeto surgiu em 2023, no contexto de uma disciplina de extensão, como uma forma de levar
-        o estudo da água para além da sala de aula. Desde então, passou a desenvolver atividades
-        voltadas à aproximação entre universidade e sociedade.
-      </p>
-      <p>
-        Com o laboratório móvel <strong>"Ciência sobre Rodas"</strong>, o Bentônicos leva equipamentos
-        e atividades práticas até as escolas. Em 2026, a atuação ganhou força com a participação na
-        Semana da Água, realizada em parceria com a Secretaria de Meio Ambiente de Itabira, que reuniu
-        cerca de 300 alunos da rede pública. O projeto também foi aprovado no Edital 02/2026 da Pró-Reitoria
-        de Extensão (Proex) da UNIFEI.
-      </p>
     </div>
   </section>
 
-  <section id="objetivo">
+  <!-- 3. OBJETIVO E PROPÓSITO -->
+  <section id="objetivo" class="alternado">
     <div class="container">
       <div class="destaque-objetivo">
         <div>
@@ -112,8 +134,8 @@
           </p>
           <p style="margin-top: 1rem;">
             Análises físico-químicas mostram como a água está no momento da coleta. A comunidade de
-            macroinvertebrados, por sua vez, reflete o que aconteceu com o ambiente por semanas ou meses,
-            o que permite uma leitura mais contínua da saúde do corpo hídrico.
+            macroinvertebrados reflete o que aconteceu com o ambiente por semanas ou meses, o que
+            permite uma leitura mais contínua da saúde do corpo hídrico.
           </p>
         </div>
         <div>
@@ -129,134 +151,136 @@
     </div>
   </section>
 
-  <section id="eixos" class="alternado">
+  <!-- 4. PESQUISA, ENSINO E EXTENSÃO -->
+  <section id="eixos">
     <div class="container">
       <div class="cabecalho-secao centro">
         <span class="rotulo">Eixos de atuação</span>
         <h2>Pesquisa, ensino e extensão</h2>
       </div>
       <div class="eixos">
-        <div class="eixo">
+        <article class="eixo">
           <div class="imagem" style="background-image: url('img/pesquisa-coleta.jpg');" role="img" aria-label="Coleta de amostras para pesquisa"></div>
           <div class="eixo-texto">
             <h3>Pesquisa</h3>
-            <p>Estudo das comunidades de macroinvertebrados e de sua relação com as condições do ambiente, gerando dados sobre os corpos hídricos da região.</p>
+            <p>Coleta, identificação e análise de macroinvertebrados bentônicos para avaliar a qualidade dos ambientes aquáticos.</p>
           </div>
-        </div>
-        <div class="eixo">
+        </article>
+        <article class="eixo">
           <div class="imagem" style="background-image: url('img/ensino-laboratorio.jpg');" role="img" aria-label="Estudantes em laboratório"></div>
           <div class="eixo-texto">
             <h3>Ensino</h3>
-            <p>Formação de estudantes universitários em métodos de coleta, triagem, identificação e análise da qualidade da água.</p>
+            <p>Formação de estudantes universitários, com desenvolvimento de conhecimentos científicos e práticos.</p>
           </div>
-        </div>
-        <div class="eixo">
+        </article>
+        <article class="eixo">
           <div class="imagem" style="background-image: url('img/extensao-escola.jpg');" role="img" aria-label="Atividade educativa com estudantes"></div>
           <div class="eixo-texto">
             <h3>Extensão</h3>
-            <p>Transferência desse conhecimento a escolas e à comunidade, por meio de palestras, atividades práticas e eventos científicos.</p>
+            <p>Compartilhamento do conhecimento com escolas públicas, professores e comunidade.</p>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <section id="metodologia">
+  <!-- 5. METODOLOGIA -->
+  <section id="metodologia" class="alternado">
     <div class="container">
       <div class="cabecalho-secao">
         <span class="rotulo">Metodologia</span>
         <h2>Quatro ações formativas</h2>
+        <p>O projeto adota abordagem de relato de experiência, de caráter descritivo e qualitativo, que registra o que acontece em cada ação e como os participantes respondem a ela.</p>
       </div>
 
-      <div class="abordagem">
-        <p>
-          O projeto adota abordagem de <strong>relato de experiência</strong>, de caráter
-          <strong>descritivo e qualitativo</strong>, que registra o que acontece em cada ação e
-          como os participantes respondem a ela.
-        </p>
-      </div>
-
-      <div class="etapas">
-        <div class="etapa">
+      <div class="passos">
+        <article class="passo">
+          <span class="numero">01</span>
           <h3>Conhecer</h3>
           <p>Palestras no laboratório móvel sobre água, ecossistemas e biodiversidade.</p>
-        </div>
-        <div class="etapa">
+        </article>
+        <article class="passo">
+          <span class="numero">02</span>
           <h3>Experienciar</h3>
           <p>Coleta de amostras em três pontos do corpo hídrico, com participação dos estudantes.</p>
-        </div>
-        <div class="etapa">
+        </article>
+        <article class="passo">
+          <span class="numero">03</span>
           <h3>Analisar</h3>
           <p>Triagem e identificação dos organismos coletados, seguidas do cálculo do índice de qualidade.</p>
-        </div>
-        <div class="etapa">
+        </article>
+        <article class="passo">
+          <span class="numero">04</span>
           <h3>Agir</h3>
           <p>Mesas-redondas, maquetes, vídeos e campanhas que levam o aprendizado para a comunidade.</p>
-        </div>
+        </article>
       </div>
 
-      <div class="metodo" style="margin-top: 3.5rem;">
-        <div class="instrumentos">
-          <span class="rotulo">Instrumentos e avaliação</span>
+      <div class="fluxo">
+        <h3>Como se faz a avaliação biológica</h3>
+        <ol>
+          <li><strong>Coleta de amostras</strong><span>Retirada de macroinvertebrados do fundo do corpo hídrico.</span></li>
+          <li><strong>Triagem</strong><span>Separação dos organismos da amostra com lupas e microscópios.</span></li>
+          <li><strong>Identificação</strong><span>Reconhecimento dos organismos até o nível de família.</span></li>
+          <li><strong>Índice BMWP</strong><span>Atribuição de pontuações às famílias encontradas.</span></li>
+          <li><strong>Interpretação</strong><span>Leitura da qualidade ambiental a partir da pontuação total.</span></li>
+        </ol>
+      </div>
+
+      <div class="instrumentos">
+        <div>
+          <h3>Instrumentos</h3>
           <p>
-            Lupas e microscópios são usados na triagem, para separar os organismos da amostra, e na
-            identificação, para reconhecer cada grupo.
-          </p>
-          <p>
-            A avaliação utiliza o índice BMWP, adaptado por Silva et al. (2011), que atribui uma pontuação
-            a cada família de macroinvertebrados conforme sua sensibilidade às alterações ambientais. A soma
-            das pontuações indica a qualidade do ambiente.
+            Lupas e microscópios são ferramentas de apoio. Elas servem para separar os organismos da
+            amostra e reconhecer cada grupo, mas não avaliam a qualidade da água sozinhas.
           </p>
         </div>
-        <figure class="figura">
-          <div class="imagem" style="background-image: url('img/microscopio.jpg');" role="img" aria-label="Lupas e microscópios para triagem"></div>
-          <figcaption>Triagem de amostras com lupas e microscópios. [Inserir crédito da fotografia]</figcaption>
-        </figure>
+        <div>
+          <h3>Método de avaliação</h3>
+          <p>
+            O índice BMWP, adaptado por Silva et al. (2011), atribui uma pontuação a cada família de
+            macroinvertebrados conforme sua sensibilidade às alterações ambientais. A soma dessas
+            pontuações indica a qualidade do ambiente.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="publico" class="alternado">
+  <!-- 6. PÚBLICO ATENDIDO -->
+  <section id="publico">
     <div class="container">
       <div class="cabecalho-secao centro">
         <span class="rotulo">Público atendido</span>
         <h2>Atividades para cada etapa de formação</h2>
       </div>
       <div class="grade">
-        <div class="card">
-          <h3>Educação básica</h3>
-          <p>Estudantes do Ensino Fundamental I, Fundamental II e Médio. As atividades tratam de ecossistemas aquáticos, poluição hídrica e bioindicadores.</p>
-        </div>
-        <div class="card">
-          <h3>Ensino técnico</h3>
-          <p>Estudantes que aplicam o monitoramento ambiental prático e o uso de indicadores biológicos.</p>
-        </div>
-        <div class="card">
-          <h3>Universitários</h3>
-          <p>Estudantes da UNIFEI que participam das coletas, das análises e da produção de conhecimento.</p>
-        </div>
-        <div class="card">
-          <h3>Comunidade</h3>
-          <p>Participantes de eventos científicos e ações públicas, como a Semana da Água 2026.</p>
-        </div>
+        <div class="card"><h3>Ensino Fundamental I</h3><p>Ecossistemas aquáticos, biodiversidade e os pequenos organismos da água.</p></div>
+        <div class="card"><h3>Ensino Fundamental II</h3><p>Relações ecológicas, poluição hídrica e bioindicadores.</p></div>
+        <div class="card"><h3>Ensino Médio</h3><p>Biomonitoramento, ecologia aquática e a aplicação da ciência.</p></div>
+        <div class="card"><h3>Ensino técnico</h3><p>Monitoramento ambiental prático e uso de indicadores biológicos.</p></div>
+        <div class="card"><h3>Universitários</h3><p>Estudantes da UNIFEI que participam das coletas, das análises e da produção de conhecimento.</p></div>
+        <div class="card"><h3>Professores</h3><p>Formação e materiais que apoiam o trabalho com a água em sala de aula.</p></div>
+        <div class="card"><h3>Comunidade</h3><p>Participantes de eventos científicos e ações públicas, como a Semana da Água.</p></div>
       </div>
-      <div class="inclusao">
+      <div class="faixa-acessibilidade">
         <h3>Inclusão e acessibilidade</h3>
         <p>
-          As atividades contam com adaptações pedagógicas para estudantes com deficiência, conforme a
-          Lei nº 13.146/2015 (Estatuto da Pessoa com Deficiência), com materiais e linguagem adaptados a
-          diferentes necessidades e atividades práticas que não dependem de uma única forma de participação.
+          Compromisso transversal do projeto: as atividades contam com adaptações pedagógicas para
+          estudantes com deficiência, conforme a Lei nº 13.146/2015 (Estatuto da Pessoa com Deficiência),
+          com materiais e linguagem adaptados e atividades práticas que não dependem de uma única forma de participação.
         </p>
       </div>
     </div>
   </section>
 
-  <section id="coordenacao">
+  <!-- 7. COORDENAÇÃO -->
+  <section id="coordenacao" class="alternado">
     <div class="container">
       <div class="cabecalho-secao">
-        <span class="rotulo">Coordenação e equipe docente</span>
+        <span class="rotulo">Coordenação do projeto</span>
         <h2>Os coordenadores do Bentônicos</h2>
-        <p>Os professores Bianca Cabral Caldeira e Anderson de Assis Morais são coordenadores do projeto, em conjunto.</p>
+        <p>Os professores Bianca Cabral Caldeira e Anderson de Assis Morais coordenam o projeto em conjunto.</p>
       </div>
 
       <article class="perfil">
@@ -266,19 +290,14 @@
         <div>
           <h3>Bianca Cabral Caldeira</h3>
           <p class="cargo">Coordenadora do Projeto Bentônicos · UA3 – Instituto de Ciências Puras e Aplicadas, UNIFEI</p>
-          <p>
-            Bióloga com doutorado em Desenvolvimento Curricular e Formação Docente, pela Universidade do
-            Minho (Portugal). Sua trajetória une a formação científica em ciências biológicas e em
-            medicina veterinária, pela Universidade Federal de Viçosa (UFV), à reflexão sobre o ensino.
-          </p>
           <h4>Formação acadêmica</h4>
           <ul>
             <li><strong>Graduação</strong> Ciências Biológicas, Unileste</li>
-            <li><strong>Mestrado</strong> Medicina Veterinária, UFV</li>
-            <li><strong>Doutorado</strong> Desenvolvimento Curricular e Formação Docente, Universidade do Minho</li>
+            <li><strong>Mestrado</strong> Medicina Veterinária, Universidade Federal de Viçosa</li>
+            <li><strong>Doutorado</strong> Desenvolvimento Curricular e Formação Docente, Universidade do Minho (Portugal)</li>
           </ul>
-          <h4>Áreas de interesse</h4>
-          <p>Engenharia Ambiental e desenvolvimento curricular e formação docente.</p>
+          <h4>Áreas de atuação</h4>
+          <p>Engenharia Ambiental, desenvolvimento curricular e formação docente.</p>
           <h4>Contribuição ao projeto</h4>
           <p>
             Sua formação em ensino conecta a pesquisa sobre a água à prática educativa do Bentônicos,
@@ -297,11 +316,6 @@
         <div>
           <h3>Anderson de Assis Morais</h3>
           <p class="cargo">Coordenador do Projeto Bentônicos · Professor Associado II, UA3 – Instituto de Ciências Puras e Aplicadas, UNIFEI</p>
-          <p>
-            Atua nos cursos de graduação do Campus Itabira, com disciplinas como Microbiologia Ambiental,
-            Limnologia e Ciências do Ambiente, e no mestrado profissional PROFÁGUA, com a disciplina
-            Hidrologia e Qualidade da Água.
-          </p>
           <h4>Formação acadêmica</h4>
           <ul>
             <li><strong>Graduação</strong> Ciências Biológicas (2002)</li>
@@ -309,16 +323,15 @@
             <li><strong>Mestrado</strong> Saneamento Ambiental, UFV (2006)</li>
             <li><strong>Doutorado</strong> Saneamento Ambiental, UFV (2012)</li>
           </ul>
-          <h4>Áreas de experiência e pesquisa</h4>
+          <h4>Áreas de atuação</h4>
           <p>
-            Engenharia Ambiental, qualidade da água, avaliação de águas superficiais, remoção de
-            cianobactérias e cianotoxinas em sistemas de tratamento, caracterização de efluentes industriais
-            e metodologias ativas de ensino.
+            Microbiologia Ambiental, Limnologia, Ciências do Ambiente, Hidrologia e Qualidade da Água,
+            avaliação de águas superficiais, saneamento ambiental e remoção de cianobactérias e cianotoxinas.
           </p>
           <h4>Contribuição ao projeto</h4>
           <p>
             Sua atuação em limnologia e qualidade da água fundamenta a leitura das comunidades de
-            macroinvertebrados e sua relação com o ambiente aquático estudado pelo Bentônicos.
+            macroinvertebrados e de sua relação com o ambiente aquático estudado pelo Bentônicos.
           </p>
           <div class="links">
             <a class="botao-outline" href="mailto:andersondeassis@unifei.edu.br">andersondeassis@unifei.edu.br</a>
@@ -329,7 +342,64 @@
     </div>
   </section>
 
-  <section id="ficha" class="alternado">
+  <!-- 8. GALERIA (oculta até existirem fotos reais; remova o atributo hidden quando estiver pronta) -->
+  <section id="galeria" hidden>
+    <div class="container">
+      <div class="cabecalho-secao centro">
+        <span class="rotulo">Galeria</span>
+        <h2>O Bentônicos em ação</h2>
+        <p>Registros de campo, laboratório, eventos e ações educativas.</p>
+      </div>
+      <div class="galeria-grid">
+        <figure class="item">
+          <a href="img/galeria-01.jpg"><img src="img/galeria-01.jpg" alt="Descrição da foto 1"></a>
+          <figcaption><strong>[Data]</strong>[Legenda e descrição da atividade]</figcaption>
+        </figure>
+        <figure class="item">
+          <a href="img/galeria-02.jpg"><img src="img/galeria-02.jpg" alt="Descrição da foto 2"></a>
+          <figcaption><strong>[Data]</strong>[Legenda e descrição da atividade]</figcaption>
+        </figure>
+        <figure class="item">
+          <a href="img/galeria-03.jpg"><img src="img/galeria-03.jpg" alt="Descrição da foto 3"></a>
+          <figcaption><strong>[Data]</strong>[Legenda e descrição da atividade]</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <dialog id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="" alt="">
+    <button type="button" id="fechar-lightbox">Fechar</button>
+  </dialog>
+
+  <!-- 9. CIÊNCIA SOBRE RODAS -->
+  <section id="ciencia-rodas" class="alternado">
+    <div class="container ciencia">
+      <div>
+        <span class="rotulo">Laboratório móvel</span>
+        <h2>Ciência sobre Rodas</h2>
+        <p>
+          O laboratório móvel leva a ciência até onde ela costuma não chegar. Ao sair da universidade
+          e entrar nas escolas, ele aproxima estudantes da pesquisa ambiental e torna a água um tema
+          de experiência, e não apenas de livro.
+        </p>
+        <p>
+          Para a extensão universitária, a iniciativa é uma forma concreta de compartilhar o conhecimento
+          produzido na UNIFEI, com palestras e atividades práticas que fazem parte das ações formativas
+          do Bentônicos.
+        </p>
+        <div class="botoes">
+          <a class="botao" href="mailto:macrobentonicos@gmail.com?subject=Quero%20receber%20o%20Ci%C3%AAncia%20sobre%20Rodas%20na%20minha%20escola">Leve o Bentônicos à sua escola</a>
+        </div>
+      </div>
+      <figure class="figura">
+        <div class="imagem" style="background-image: url('img/ciencia-sobre-rodas.jpg'); height: 380px;" role="img" aria-label="Laboratório móvel Ciência sobre Rodas"></div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 10. FICHA TÉCNICA -->
+  <section id="ficha">
     <div class="container">
       <div class="cabecalho-secao centro">
         <span class="rotulo">Ficha técnica</span>
@@ -337,22 +407,20 @@
       </div>
       <div class="ficha-grid">
         <div class="ficha-card">
-          <h3>Identificação institucional</h3>
+          <h3>Identificação</h3>
           <dl>
             <dt>Projeto</dt><dd>Bentônicos</dd>
             <dt>Instituição</dt><dd>UNIFEI</dd>
             <dt>Campus</dt><dd>Itabira (MG)</dd>
             <dt>Área</dt><dd>Engenharia Ambiental</dd>
             <dt>Natureza</dt><dd>Extensão universitária</dd>
-            <dt>Criação</dt><dd>2023 [confirmar]</dd>
+            <dt>Criação</dt><dd>2023</dd>
           </dl>
         </div>
         <div class="ficha-card">
-          <h3>Coordenação e equipe</h3>
-          <dl>
-            <dt>Coordenação</dt><dd>Bianca Cabral Caldeira e Anderson de Assis Morais</dd>
-            <dt>Estudantes</dt><dd>Graduação, com [número a confirmar]</dd>
-          </dl>
+          <h3>Coordenação</h3>
+          <p>Bianca Cabral Caldeira</p>
+          <p>Anderson de Assis Morais</p>
         </div>
         <div class="ficha-card">
           <h3>Temáticas centrais</h3>
@@ -372,30 +440,93 @@
             <span>ODS 13</span>
             <span>ODS 14</span>
           </div>
-          <p style="margin-top: 0.9rem;">Saúde, educação, água potável, ação climática e vida na água.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- 11. CONTATO -->
   <section class="faixa" id="contato">
     <div class="container">
-      <h2>Quer receber o projeto na sua escola?</h2>
-      <p>Escreva para nós para saber como funcionam as visitas, tirar dúvidas ou propor uma parceria.</p>
-      <div class="contato-links">
-        <a class="botao" href="mailto:macrobentonicos@gmail.com">macrobentonicos@gmail.com</a>
+      <h2>Vamos conversar?</h2>
+      <p>Escolha o assunto e escreva para nós. Respondemos sobre visitas, parcerias e dúvidas gerais.</p>
+      <div class="contato-cards" style="text-align: left;">
+        <a class="contato-card" href="mailto:macrobentonicos@gmail.com?subject=Visita%20%C3%A0%20escola">
+          <h3>Escolas</h3>
+          <p>Saiba como funcionam as visitas do laboratório móvel e as atividades para estudantes.</p>
+          <span>Solicitar visita →</span>
+        </a>
+        <a class="contato-card" href="mailto:macrobentonicos@gmail.com?subject=Proposta%20de%20parceria">
+          <h3>Instituições</h3>
+          <p>Propostas de parceria com órgãos públicos, escolas, empresas e outras universidades.</p>
+          <span>Propor parceria →</span>
+        </a>
+        <a class="contato-card" href="mailto:macrobentonicos@gmail.com?subject=Quero%20conhecer%20o%20projeto">
+          <h3>Pessoas interessadas</h3>
+          <p>Tire dúvidas, conheça o trabalho do projeto ou acompanhe as novidades.</p>
+          <span>Enviar mensagem →</span>
+        </a>
+      </div>
+      <div class="contato-links" style="margin-top: 2.5rem;">
         <a class="botao botao-secundario" href="https://www.instagram.com/bentonicos_unifei" target="_blank" rel="noopener">Siga no Instagram</a>
       </div>
     </div>
   </section>
 
+  </main>
+
   <footer>
-    <p>Projeto Bentônicos · UNIFEI Campus Itabira</p>
-    <a class="instagram" href="https://www.instagram.com/bentonicos_unifei" target="_blank" rel="noopener" aria-label="Instagram do Bentônicos">
-      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
-    </a>
-    <p><a href="mailto:macrobentonicos@gmail.com">macrobentonicos@gmail.com</a></p>
+    <div class="rodape-grid">
+      <div>
+        <img src="img/logo.png.jpeg" alt="Logotipo do Projeto Bentônicos">
+        <p>Projeto de extensão da UNIFEI, Campus Itabira, sobre macroinvertebrados bentônicos como bioindicadores da qualidade da água.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#apresentacao">Apresentação</a></li>
+          <li><a href="#metodologia">Metodologia</a></li>
+          <li><a href="#publico">Público atendido</a></li>
+          <li><a href="#coordenacao">Coordenação</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:macrobentonicos@gmail.com">macrobentonicos@gmail.com</a></li>
+          <li>UNIFEI · Campus Itabira (MG)</li>
+        </ul>
+        <a class="instagram" href="https://www.instagram.com/bentonicos_unifei" target="_blank" rel="noopener" aria-label="Instagram do Bentônicos">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+    <p class="direitos">© 2026 Projeto Bentônicos · UNIFEI Campus Itabira. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    // Lightbox da galeria
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    document.querySelectorAll('#galeria a').forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        lightboxImg.src = link.href;
+        lightboxImg.alt = link.querySelector('img').alt;
+        lightbox.showModal();
+      });
+    });
+
+    document.getElementById('fechar-lightbox').addEventListener('click', function () {
+      lightbox.close();
+    });
+
+    lightbox.addEventListener('click', function (event) {
+      if (event.target === lightbox) lightbox.close();
+    });
+  </script>
 
 </body>
 </html>
